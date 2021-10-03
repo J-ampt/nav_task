@@ -1,0 +1,70 @@
+:root{
+  --cent:30px
+}
+
+
+header{
+  display: flex;
+  width: 100%;
+  background-color: black;
+
+  justify-content: center;
+
+  height: 5em;
+}
+
+.logo{
+  color: white;
+  text-align: left;
+  font-size: 1.5em;
+
+  font-style: italic;
+  padding-top: 25px;
+  width: calc(100%/3);
+  min-width: 300px;
+
+  justify-content: center;
+}
+
+.namain_nav{
+  width: calc(100%/3);
+  min-width: 300px;
+}
+
+.nav_list{
+  padding-top: var(--cent);
+}
+
+li{
+  display: inline;
+  margin: 0 5px;
+
+  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+}
+
+.contact{
+  padding-top: 17px;
+  width: calc(100%/3);
+  min-width: 300px;
+  text-align: right;
+}
+
+.contact_button{
+  color: white;
+  background-color: transparent;
+  height: 45px;
+  width: 100px;
+
+
+  border-radius: 10px;
+  border: solid 3px white;
+
+  justify-content: right;
+}
+
+body{
+
+  background-color: white;
+}
