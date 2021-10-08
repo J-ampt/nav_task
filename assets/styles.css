@@ -1,34 +1,41 @@
 :root{
-  --cent:30px
+  --cent:30px;
+  --nwidth: calc(100% /3)
 }
 
 
 header{
   display: flex;
-  width: 100%;
   background-color: black;
-
-  justify-content: center;
+  width: 100%;
 
   height: 5em;
+  max-height: calc(5em*3);
+  min-width: var(--nwidth);
 }
 
-.logo{
+p{
   color: white;
   text-align: left;
   font-size: 1.5em;
-
   font-style: italic;
+
+  margin-left: 80px;
+}
+
+.logo{
   padding-top: 25px;
-  width: calc(100%/3);
+  width: var(--nwidth);
+  min-width: var(--nwidth);
   min-width: 300px;
 
   justify-content: center;
 }
 
-.namain_nav{
-  width: calc(100%/3);
-  min-width: 300px;
+.main_nav{
+  width: var(--nwidth);
+  min-width: var(--nwidth);
+  text-align: center;
 }
 
 .nav_list{
@@ -46,12 +53,14 @@ li{
 
 .contact{
   padding-top: 17px;
-  width: calc(100%/3);
+  width: var(--nwidth);
   min-width: 300px;
   text-align: right;
+  min-width: var(--nwidth);
 }
 
 .contact_button{
+  margin-right: 80px;
   color: white;
   background-color: transparent;
   height: 45px;
@@ -65,6 +74,6 @@ li{
 }
 
 body{
-
+  display: flex;
   background-color: white;
 }
